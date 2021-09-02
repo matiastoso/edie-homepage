@@ -1,0 +1,110 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 90%;
+  padding: 18px 0px;
+  margin: 0px auto;
+}
+
+.nav-logo {
+  color: #333;
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+.nav-menu {
+  font-size: 2.4rem;
+  display: none;
+  cursor: pointer;
+}
+
+.nav-menu::-moz-selection {
+  background: inherit;
+}
+
+.nav-menu::selection {
+  background: inherit;
+}
+
+.nav-enlaces {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.nav-enlaces-item {
+  list-style: none;
+}
+
+.nav-enlaces-item a {
+  color: #333;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.nav-enlaces-item a:hover {
+  text-decoration: underline;
+}
+
+.nav-active {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+@media (max-width: 1040px) {
+  .nav-enlaces {
+    width: 55%;
+  }
+}
+
+@media (max-width: 890px) {
+  .nav-menu {
+    display: block;
+  }
+  .nav-enlaces {
+    display: none;
+    background-color: #100E1D;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: wrap column;
+            flex-flow: wrap column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: 100%;
+    height: 240px;
+  }
+  .nav-enlaces a {
+    color: #fff;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
