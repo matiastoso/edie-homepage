@@ -1,0 +1,66 @@
+// ESTILOS DEL CONTACT
+.contact {
+    width: 60%;
+    margin: 30px auto 0px auto;
+
+    &-title {
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 4.5rem;
+        color: $gray-1;
+    }
+    
+    &-text {
+        width: 40%;
+        text-align: justify;
+        font-weight: 400;
+        font-size: 1.1rem;
+        line-height: 1.7rem;
+        color: $gray-2;
+    }
+
+    &-email {
+        position: relative;
+
+        &_label {
+            color: $gray-3;
+            font-weight: 500;
+            font-size: .9rem;
+            line-height: 21px;
+        }
+
+        &_input {
+            margin-top: 6px;
+            border: none;
+            background: $gray-6;
+            width: 350px;
+            height: 57px;
+            border-radius: 12px;
+            padding-left: 24px;
+            color: $gray-2;
+            outline: none;
+
+            &::placeholder {
+                color: $gray-4;
+                font-weight: 500;
+                font-size: 1.1rem;
+                line-height: 57px;
+            }
+        }
+
+        &_span {
+            display: block;
+            text-align: center;
+            position: absolute;
+            background: $light-blue;
+            color: $gray-6;
+            font-size: 1.1rem;
+            width: 94px;
+            height: 49px;
+            line-height: 49px;
+            border-radius: 12px;
+            bottom: 4px;
+            left: 250px;
+        }
+    }
+}

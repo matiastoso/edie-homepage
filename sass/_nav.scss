@@ -33,6 +33,7 @@
         align-items: center;
 
         width: 45%;
+        padding-left: 0px;
         transition: all .5s;
 
         &-item {
@@ -53,6 +54,17 @@
 
     &-active {
         display: flex !important;
+        animation: animacion;
+        animation-duration: .8s;
+    }
+}
+
+// ANIMACION NAV
+@keyframes animacion {
+    from {
+        opacity: .3;
+    } to {
+        opacity: 1;
     }
 }
 
